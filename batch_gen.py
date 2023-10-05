@@ -28,7 +28,7 @@ class BatchGenerator(object):
         return False
 
     def read_data(self, vid_list_file):
-        file_ptr = open(vid_list_file, 'r')
+        file_ptr = open(vid_list_file, 'r') # train.split1.bundle
         self.list_of_examples = file_ptr.read().split('\n')[:-1]
         file_ptr.close()
 
